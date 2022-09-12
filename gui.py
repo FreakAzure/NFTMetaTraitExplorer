@@ -52,8 +52,9 @@ class ScrapperGUI:
             button.grid(column=0, pady=5)
 
     def displayMatchingFiles(self ,files) :
+        print('Generating output file...')
         with open('./output/output.txt', 'w') as f:
             for line in files:
                 f.write(f"{line}\n")
-        
+        print('Output file generated!')
     
