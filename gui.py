@@ -25,6 +25,7 @@ class ScrapperGUI:
 
     def setView(self):
         self.root.geometry("800x800")
+        self.configure(bg="black")
         titleLabel = Label(
             self.root,
             text="Selecciona la trait que quieres buscar",
